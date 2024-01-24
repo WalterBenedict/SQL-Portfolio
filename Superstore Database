@@ -1,6 +1,4 @@
-# Page used:   https://www.db-fiddle.com/f/PvBAaQwEUSWAxZCsg4Vmx/0
-
-# This project utilizes the follow Superstore data: 
+# This project utilizes Superstore data from the following training link:  https://www.db-fiddle.com/f/PvBAaQwEUSWAxZCsg4Vmx/0
 
 CREATE TABLE superstore (
     item_id INTEGER PRIMARY KEY,
