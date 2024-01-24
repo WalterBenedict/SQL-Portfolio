@@ -33,7 +33,7 @@ VALUES
 /* Items listed by price in descending order */
 SELECT 
 	item_name, 
-    price 
+	price 
 FROM superstore 
 ORDER BY price;
 
@@ -50,13 +50,13 @@ FROM superstore;
 /* Price of all Kichen Supplies */
 SELECT
 	category, 
-    SUM(price) AS "Total Price of Kitchen Supplies"
+	SUM(price) AS "Total Price of Kitchen Supplies"
 FROM superstore
 WHERE category = "Kitchen Supplies";
 
 
 SELECT
 	category AS "Category", 
-    SUM(price) AS "Total spent in each category"
+	SUM(price) AS "Total spent in each category"
 FROM superstore
 GROUP BY category;
