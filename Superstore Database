@@ -28,7 +28,9 @@ VALUES
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
 
-# I wrote the following code for this project
+
+# Analysis
+
 
 /* Items listed by price in descending order */
 SELECT 
