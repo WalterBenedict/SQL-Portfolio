@@ -78,7 +78,8 @@ GROUP BY Maternity_Benefits_Ranking;
 SELECT 
 	industry, 
     ROUND(AVG(revenue),1) as avg_revenue_billions, 
-    ROUND(AVG(revenue/employees*1000000)) AS "Revenue per Employee"
+    AVG(employees),
+    AVG(revenue)/AVG(employees)*1000000 AS "Revenue per Employee"
 FROM fortune_companies
 GROUP BY industry
 HAVING avg_revenue_billions>=100
@@ -93,6 +94,5 @@ WHERE healthcare_benefits=0 AND paid_time_off_days<15 AND maternity_leave_weeks<
 /* What is the most profitable Finance company and what is its revenue? */
 SELECT company_name, MAX(revenue)
 FROM fortune_companies
-WHERE industry = 'Finance'
-;
+WHERE industry = 'Finance';
 
